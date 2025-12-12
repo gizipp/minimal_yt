@@ -71,7 +71,7 @@ class ChannelConfig {
     // Add other channels here...
   ];
 }
-
+```
 
 📦 Installation (Sideload to TV)
 To install this application onto an Android TV Box, Mi Box, or Google TV:
