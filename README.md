@@ -19,9 +19,10 @@ This application is designed 100% for navigation using a TV Remote D-Pad, comple
 YouTube on TV often becomes a tool for endless "doom-scrolling" due to aggressive algorithmic recommendations.
 
 **Minimal YT** is built on the **"Dopamine Free"** principle:
-1.  **No Home Feed:** Upon opening, there is only a search box. You must know what you want to watch.
-2.  **Anti-Shorts:** All search results and channel feeds automatically filter out videos under 60 seconds.
-3.  **Safe Kiosk Mode:** An optional feature to display a curated row of safe/whitelisted channels for families/children on the main page.
+
+1. **No Home Feed:** Upon opening, there is only a search box. You must know what you want to watch.
+2. **Anti-Shorts:** All search results and channel feeds automatically filter out videos under 60 seconds.
+3. **Safe Kiosk Mode:** An optional feature to display a curated row of safe/whitelisted channels for families/children on the main page.
 
 ---
 
@@ -39,12 +40,13 @@ YouTube on TV often becomes a tool for endless "doom-scrolling" due to aggressiv
 
 This project is built using a single Flutter codebase targeting Android TV.
 
-| Component | Technology | Description |
-| :--- | :--- | :--- |
-| **Framework** | [Flutter](https://flutter.dev) | Dart language. |
-| **State Management** | [Riverpod](https://riverpod.dev) | For robust and scalable state handling. |
-| **Data Source** | [Youtube Explode](https://pub.dev/packages/youtube_explode_dart) | Scraping-based library (No official API Key needed). |
-| **Video Player** | `video_player` | Standard Flutter video playback engine. |
+
+| Component            | Technology                                                       | Description                                          |
+| :--------------------- | :----------------------------------------------------------------- | :----------------------------------------------------- |
+| **Framework**        | [Flutter](https://flutter.dev)                                   | Dart language.                                       |
+| **State Management** | [Riverpod](https://riverpod.dev)                                 | For robust and scalable state handling.              |
+| **Data Source**      | [Youtube Explode](https://pub.dev/packages/youtube_explode_dart) | Scraping-based library (No official API Key needed). |
+| **Video Player**     | `video_player`                                                   | Standard Flutter video playback engine.              |
 
 ---
 
@@ -52,8 +54,8 @@ This project is built using a single Flutter codebase targeting Android TV.
 
 As a developer (or parent), you can configure which channels appear in "Quick Access" on the main page. This is useful for creating a "Safe Mode" for children.
 
-1.  Open the file `lib/core/channel_config.dart`.
-2.  Add the Channel Name and ID to the `pinnedChannels` list:
+1. Open the file `lib/core/channel_config.dart`.
+2. Add the Channel Name and ID to the `pinnedChannels` list:
 
 ```dart
 // lib/core/channel_config.dart
@@ -73,26 +75,32 @@ class ChannelConfig {
 }
 ```
 
-📦 Installation (Sideload to TV)
+## 📦 Installation (Sideload to TV)
+
 To install this application onto an Android TV Box, Mi Box, or Google TV:
+
 1. Build Release APK
-Run the following command in your terminal:
+   Run the following command in your terminal:
 
 ```Bash
 flutter build apk --release
 ```
 
 The APK file will be generated at: build/app/outputs/flutter-apk/app-release.apk
+
 2. Transfer to TV
 Copy the APK file to a USB Flash Drive.
 Plug the Flash Drive into your Android TV.
 Use a File Manager app on the TV to access the drive and install the APK.
-🧑‍💻 Development Setup
-If you want to run this project locally (development machine):
-Prerequisites
-Ensure the Flutter SDK is installed.
-1. Clone Repo
 
+## 🧑‍💻 Development Setup
+
+If you want to run this project locally (development machine):
+
+**Prerequisites**
+Ensure the Flutter SDK is installed.
+
+1. Clone Repo
 
 ```Bash
 git clone [https://github.com/gizipp/minimal_yt.git](https://github.com/gizipp/minimal_yt.git)
@@ -106,7 +114,7 @@ flutter pub get
 ```
 
 3. Run (Testing Navigation)
-It is recommended to use macOS or Windows targets to simulate arrow key inputs as a TV remote.
+   It is recommended to use macOS or Windows targets to simulate arrow key inputs as a TV remote.
 
 ```Bash
 flutter run -d macos
@@ -114,6 +122,7 @@ flutter run -d macos
 flutter run -d windows
 ```
 
-📄 License
+## 📄 License
+
 This project is open-source for educational and personal use.
 Disclaimer: This project is a third-party client and is not affiliated with, associated with, or endorsed by YouTube or Google Inc.
