@@ -1,0 +1,96 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Visual Studio Code related
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/settings.json
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio / Gradle
+**/android/**/gradle-wrapper.jar
+**/android/.gradle
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+
+# Android build artifacts
+/android/app/debug
+/android/app/profile
+/android/app/release
+/android/app/build
+/android/app/src/main/assets/flutter_assets
+
+# iOS / macOS related
+**/ios/**/Flutter/Generated.xcconfig
+**/ios/**/Flutter/flutter_export_environment.sh
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/macos/Flutter/GeneratedPluginRegistrant.*
+**/macos/Flutter/ephemeral
+
+# CocoaPods (iOS/macOS dependencies)
+**/ios/Pods/
+**/macos/Pods/
+**/Pods/
+
+# Windows related
+**/windows/flutter/ephemeral/
+**/windows/flutter/generated_plugin_registrant.cc
+**/windows/flutter/generated_plugin_registrant.h
+**/windows/runner/resources/
+
+# Linux related
+**/linux/flutter/ephemeral/
+**/linux/flutter/generated_plugin_registrant.cc
+**/linux/flutter/generated_plugin_registrant.h
+
+# Web related
+lib/generated_plugin_registrant.dart
+
+# Exceptions to above rules (jika ada file spesifik yang ingin dipaksa masuk git)
+!**/android/**/gradle-wrapper.jar
+!**/android/gradlew
+!**/android/gradlew.bat
+
+# Key & Secrets (PENTING: Jangan upload key signing ke repo publik)
+*.jks
+*.keystore
+key.properties
